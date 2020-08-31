@@ -9,17 +9,16 @@ comic = pygame.font.SysFont('Comic Sans MS' , 30)
 g =1
 ground = 600
 bg_color =  (250,0,250)
-bg = pygame.image.load("D:\\0f43dec7616ff130b16986a254659069 (2).jpg")
+bg = pygame.image.load("\\0f43dec7616ff130b16986a254659069 (2).jpg")
 (width,height) = (800, 800)
 
 screen = pygame.display.set_mode((width,height))
 pygame.display.set_caption('Dinosaur')
-#img = pygame.image.load('D:\iitgoa_logo_wx.png')
 
 
 class Dino():
     def __init__(self):
-        self.image = pygame.image.load("D:\dinosaur.png")
+        self.image = pygame.image.load("\\dinosaur.png")
         self.x = 200
         self.y = ground
         self.v = 0
@@ -48,16 +47,14 @@ class Dino():
         offset = (self.x-Cactus.x-25, self.y-ground)
         if dino_mask.overlap(cac_mask,offset):
             return True
-
-        #if (abs(Cactus.x - self.x) < 145) and (self.y == ground):
-        #    return True
+        
         return False
 
 
 
 class Cactus():
     def __init__(self):
-        self.image = pygame.image.load("D:\cactus.png")
+        self.image = pygame.image.load("\\cactus.png")
         self.x = 800
 
 
