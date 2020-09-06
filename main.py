@@ -9,7 +9,6 @@ comic = pygame.font.SysFont('Comic Sans MS' , 30)
 g =1
 ground = 600
 bg_color =  (250,0,250)
-bg = pygame.image.load("\\0f43dec7616ff130b16986a254659069 (2).jpg")
 (width,height) = (800, 800)
 
 screen = pygame.display.set_mode((width,height))
